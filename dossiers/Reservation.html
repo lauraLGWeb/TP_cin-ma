@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver ma soirée</title>
+    <link rel="shortcut icon" href="../dossiers/assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poiret+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo_header">
+            <a href="index.html"><img src="assets/logo.png" alt="logo association" ></a>
+            <!-- <h1>Association les Films de Plein Air</h1> -->
+        </div>
+        <div>
+            <h2>Films d'auteurs diffusés du 1er au 10 juillet, de 18h à minuit</h2>
+        </div>
+        <nav class="menu">
+            <a href="../index.html#film_poster">Films</a><!--films-->
+            <a href="../index.html#agenda_announcement"> Agenda</a><!--agenda-->
+            <a href="../index.html#news_section">actualités</a><!--actualité-->
+            <a href="../index.html#who_we_are"> Nous sommes</a><!--Qui somems nous-->
+            <a href="../dossiers/contact.html"> Contact </a><!--contact--> <!--todo mettre le lien-->
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking_info_section"><!--booking information-->
+            <p>Afin de vous assurer les meilleures conditions de confort et de sécurité, nous vous demandons de vous enregister à l'avance.</p>
+            <p>L'accès au Parc et aux projections est entièrement libre et gratuit.Pour réserver vos places, merci de remplir le formulaire ci-après.Votre réservation sera automatiquement prise en compte et vous recevrez une confirmation par mail de votre demande.</p>
+            <p>Nous vous remercions de votre inscription et vous souhaitons un bon festival !</p>
+        </section>
+        <section class="form_section"><!--form-->
+            <div class="form_container">
+                <form action="" method="">
+                    <div class="to_fill">
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Nom" required>
+
+                        <label for="first_name"></label>
+                        <input type="text" id="first_name" name="first_name" placeholder="Prénom" required>
+
+                        <label for="phone_number"></label>
+                        <input type="tel" id="phone_number" name="phone_number" placeholder="Télephone" required>
+
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+
+                        <label for="participants"></label>
+                        <input type="number" min="0" id="participants" name="participants" required placeholder="Nombre de participants">
+                    </div>
+                    <fieldset id="form_2">
+                        <div class="firstjuly_six">
+                            <input type="checkbox"  id="firstjuly_six" name="day_hour">
+                            <label for="1july_six">01 juillet 18h00</label>
+                        </div>
+                        <div class=" firstjuly_eight">
+                            <input type="checkbox"  id="firstjuly_eight" name="day_hour">
+                            <label for="1july_eight">01 juillet 20h00</label>
+                        </div>
+                        <div class="sndjuly_eight">
+                            <input type="checkbox"  id="sndjuly_eight" name="day_hour">
+                            <label for="2july_eight">02 juillet 20h00</label>
+                        </div>
+                        <div class="sndjuly_ten">
+                            <input type="checkbox"  id="sndjuly_ten" name="day_hour">
+                            <label for="2july_ten">02 juillet 22h00</label>
+                        </div>
+                        <div class="trdjuly_eight">
+                            <input type="checkbox"  id="trdjuly_eight" name="day_hour">
+                            <label for="3july_eight">03 juillet 20h00</label>
+                        </div>
+                        <div class="frthjuly_six">
+                            <input type="checkbox"  id="frthjuly_six" name="day_hour">
+                            <label for="4july_six">04 juillet 18h00</label>
+                        </div>
+                        <div class="frthjuly_ten">
+                            <input type="checkbox"  id="frthjuly_ten" name="day_hour">
+                            <label for="4july_ten">04 juillet 22h00</label>
+                        </div>
+                        <div class="sixjuly_eight">
+                            <input type="checkbox"  id="sixjuly_eight" name="day_hour">
+                            <label for="6july_eight">06 juillet 20h00</label>
+                        </div>
+                        <div class="svnjuly_six">
+                            <input type="checkbox"  id="svnjuly_six" name="day_hour">
+                            <label for="7july_six">07 juillet 18h00</label>
+                        </div>
+                        <div class="tenjuly_eight"> 
+                            <input type="checkbox"  id="tenjuly_eight" name="day_hour">
+                            <label for="10july_eight">10 juillet 20h00</label>
+                        </div>
+                        <div class="tenjuly">
+                            <input type="checkbox"  id="tenjuly-ten" name="day_hour">
+                            <label for="10july-ten">10 juillet 22h00</label>
+                        </div>
+                    </fieldset> 
+                    <div class="button_div">
+                        <input type="submit"  id="submit" name="submit" value="Envoyer">
+                    </div>          
+                </form>
+            </div>
+        </section>
+    </main>
+
+   <footer>
+        <section>
+             <div class="social_media">
+               <a href="https://www.instagram.com/" target="_blank"><img src="assets/logo_intagram.png" alt="logo instagram"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="assets/logo_facebook.png" alt="logo instagram"></a>
+            </div>
+            <div class="end_menu">
+                <div class="both_links">
+                    <a href="X">Mentions Légales</a>
+                    <a href="X">Conditions RGPD</a>
+                </div>
+                <div>
+                    <p>© Copyright 2019 : Association Les Films de Plein Air</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

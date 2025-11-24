@@ -1,0 +1,355 @@
+*,
+::after,
+::before{
+Padding:0;
+Margin:0;
+Box-sizing:border-box;
+text-decoration: none;
+scroll-behavior:smooth;
+list-style-type: none;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(243, 242, 242);
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 15vh 1fr auto ;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+:root{
+    --color1:#0A0A0A;
+    --color2:#ffffff;
+    --color3:#E50914;
+    --color4:#FF9900;
+    --color5:#2C2C2C;
+    --font1:"Poiret One", sans-serif;
+    --font2:"Lato", sans-serif;
+    --font3:"Nobile", sans-serif;
+}
+
+/* header */
+header{
+    grid-area:header;
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    gap: 5vw;
+    /* pour mettre mon menu au dessus du div asso */
+}
+
+.logo_header img{
+    width: 20vw; 
+    height: 100%; 
+}
+
+
+h2{
+    color: var(--color2);
+    width: 25vw;
+    font-family: var(--font1);
+    text-transform: uppercase;    
+    text-align: center;
+    font-size: clamp(0.9em, 2.2vw, 2em);
+}
+
+nav{
+    width:40vw;
+    text-align: center;
+            
+}
+
+nav a{
+    color: var(--color2);
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 0 1vw;
+}
+
+nav a:hover {
+    color: var(--color4);
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+
+
+.contact_form_and_infos{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image:url(assets/contact_background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+main h3{
+    font-family: var(--font1);
+    font-size: 1.9em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color1);
+    /* background-color: #08000162; */
+    width: 30vw;
+    margin: auto;
+}
+
+.contact_us_text{
+    font-family: var(--font2);
+    text-align: center;
+    font-size: 1em;
+    width: 40vw;
+    margin:  auto;
+    padding: 10px 10px 0 10px;
+    color: var(--color1);
+    /* background-color: #08000162; */
+    
+}
+.our_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;  
+    margin: 0 20px;
+    
+}
+
+
+.our_contact li{
+margin: 20px 0;
+font-family: var(--font3);
+font-size: 1em;
+
+}
+ul{
+    position: relative;
+}
+
+.adress::before{
+    content:"";
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-size:100%;
+    background-image: url(assets/adress.png);
+    position: absolute;
+    top:30px;
+    left: -80px;
+}
+
+.mail::before{
+    content:"";
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-size:100%;
+    background-image: url(assets/mail.png);
+    position: relative;
+    top:60px;
+    right: 80px;
+}
+
+.tel::before{
+    content:"";
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-size:100%;
+    background-image: url(assets/tel.png);
+    position: relative;
+    top:60px;
+    right: 80px;
+}
+.contact_info{
+color: var(--color2);
+
+}
+
+.contact_info_p{
+color: var(--color2);
+font-size:1.1em;
+padding: 10px 0;
+
+}
+
+.contact_us{
+    background-color: var(--color2);
+    width: 50%;
+    margin: 0 50px;
+    font-family: var(--font3);
+    border-radius: 5px;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+input{
+   margin: 5px;
+   height: 30px;
+   border: none;
+   border-bottom: 1px solid var(--color5);
+
+}
+
+textarea{
+   margin: 5px;
+   height: 30px;
+   border: none;
+   border-bottom: 1px solid var(--color5);
+   resize: none;
+    
+}
+#submit{
+    width: 100px;
+    background-color: var(--color3);
+    border: var(--color5);
+    font-family: var(--font3);
+    color: var(--color2);
+    border-radius: 5px;
+}
+#submit:hover{
+    background-color: var(--color4);
+    transition: 0.5s;
+}
+
+
+
+
+
+
+footer{
+    grid-area: footer;
+      
+}
+
+
+footer section{
+    background-color: var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  
+}
+
+  
+footer img{
+    width: 5vw;
+    
+}
+
+.social_media{
+    display: flex;
+    justify-content: space-around;
+    min-width: 20vw;
+    padding: 20px;
+    flex-wrap: wrap;
+} 
+    
+    
+
+.end_menu{
+        text-align: center;
+        margin: 0 20px;
+}
+
+.both_links{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.both_links a:hover{
+    transition:0.5s;
+    color: var(--color4);
+}
+
+.end_menu p, .end_menu a{
+    color: var(--color2);
+    padding: 10px;
+    font-family: var(--font3);
+    text-transform: uppercase;
+}
+
+.end_menu p{
+    font-size: 0.7em;
+    text-transform: none;
+   
+}
+
+
+@media all and (max-width:900px){
+       .contact_form_and_infos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       }
+       .contact_us{
+        margin:70px 0;
+        width: 80vw;
+    
+       }
+       .our_contact{
+        background-color: rgba(69, 66, 66, 0.443);
+        margin-top: 20px;
+        border-radius: 5px;
+        width: 60vw;
+       }
+}
+
+@media all and (max-width:700px){
+       .contact_us_text{
+        width:90vw ;
+        backdrop-filter: blur(25px);
+        padding-bottom: 10px;
+       }
+       main h3{
+        width: 50vw;
+        padding: 20px 0;
+       }
+       form{
+        display: flex;
+        flex-direction: column
+       }
+
+       .our_contact{
+        margin-top: 20px;
+        border-radius: 5px;
+        width: 90vw;
+       }
+}
+
+@media all and (max-width:500px){
+       .our_contact{
+        background-color: none;
+        margin-top: 20px;
+        border-radius: 5px;
+        min-width: 90vw;
+       }
+        .our_contact ul{
+            width: 30vw;
+        }
+}
+
+/* @media all and (max-width:550){
+    .li.adress::before{
+       display: none;
+       }
+} */
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver ma soirée</title>
+    <link rel="shortcut icon" href="../dossiers/assets/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo_header">
+            <a href="index.html"><img src="assets/logo.png" alt="logo association" ></a>
+            <!-- <h1>Association les Films de Plein Air</h1> -->
+        </div>
+        <div>
+            <h2>Films d'auteurs diffusés du 1er au 10 juillet, de 18h à minuit</h2>
+        </div>
+        <nav class="menu">
+            <a href="../index.html#film_poster">Films</a><!--films-->
+            <a href="../index.html#agenda_announcement"> Agenda</a><!--agenda-->
+            <a href="../index.html#news_section">actualités</a><!--actualité-->
+            <a href="../index.html#who_we_are"> Nous sommes</a><!--Qui somems nous-->
+            <a href="../dossiers/contact.html"> Contact </a><!--contact--> <!--todo mettre le lien-->
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h3>Contactez-nous</h3>
+            <p class="contact_us_text">N’hésitez pas à nous écrire via le formulaire ci-dessous, c’est simple et rapide — ou contactez-nous en direct, nous sommes là pour vous répondre avec plaisir.</p>
+        </div>
+        <section class="contact_form_and_infos">
+            <section class="our_contact">
+            <ul>
+                    <li class="adress"><p class="contact_info_p">Adresse</p>
+                        <address class="contact_info">21 rue des Lumières, 75019 Paris</address></li>
+                    <li class="mail"><p class="contact_info_p">Mail</p>
+                        <a class="contact_info" href="mailto:contact@lesfilmsdepleinair.org">contact@lesfilmsdepleinair.org</a></li>
+                    <li class="tel"><p class="contact_info_p">Télephone</p>
+                        <a  class="contact_info" href="tel:+33(0)145123456">+33(0)1 45 12 34 56</a></li>
+                    
+                </ul>
+            </section>
+
+            <section class="contact_us">
+                <form action="" method=""><!--formulaire de contact-->
+                        <div class="table">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Nom" required>
+
+                            <label for="first_name"></label>
+                            <input type="text" id="first_name" name="first_name" placeholder="Prénom" required>
+
+                            <label for="phone_number"></label>
+                            <input type="tel" id="phone_number" name="phone_number" placeholder="Télephone" required>
+
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+
+                            <label for="message"></label>
+                            <textarea cols="10" rows="10" name="demand" id="message" placeholder="Que souhaitez-vous nous dire?" ></textarea>
+
+                            <input type="submit"  id="submit" name="submit" value="Envoyer">
+                        </div>
+                    </form>
+            </section>
+        </section>
+    </main>  
+    <footer>
+        <section>
+             <div class="social_media">
+               <a href="https://www.instagram.com/" target="_blank"><img src="assets/logo_intagram.png" alt="logo instagram"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="assets/logo_facebook.png" alt="logo instagram"></a>
+            </div>
+            <div class="end_menu">
+                <div class="both_links">
+                    <a href="X">Mentions Légales</a>
+                    <a href="X">Conditions RGPD</a>
+                </div>
+                <div>
+                    <p>© Copyright 2019 : Association Les Films de Plein Air</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
